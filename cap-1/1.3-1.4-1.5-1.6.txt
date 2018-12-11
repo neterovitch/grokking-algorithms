@@ -1,0 +1,18 @@
+Dado que los siguientes ejercicios solamente requieren el tiempo de
+ejecucion para los siguientes ejercicios en terminos de la notacion
+big O yo elijo los que a mi parecer son los mejores algoritmos.
+1.3 Dado que el directorio telefonico se encuentra ordenado 
+alfabeticamente conviene una busqueda binaria, por tanto, encontrar el
+numero telefonico de una persona dado su nombre toma un tiempo de 
+ejecucion de O(log₂ n).
+1.4 Encontrar el nombre de una persona, dado su numero telefonico, 
+requiere de un tiempo de ejecucion O(n). Los numeros telefonicos dentro
+de un directorio telefonico no poseen orden alguno, por eso es necesario
+revisarlos todos en el peor de los casos.
+1.5 Como se quieren leer los numeros de todas las personas en el 
+directorio el tiempo de ejecucion es de O(n).
+1.6 El libro aclara y afirma que para resolver este numeral son 
+necesarios los conceptos que se veran en un capitulo posterior. Para mi
+el tiempo sigue siendo O(n) y lo unico que cambia es el tamaño de n, que
+en este caso corresponderia solo al tamaño del subconjunto de los 
+nombres que empiezan con a en el directorio.
