@@ -1,0 +1,7 @@
+1.1 Si tenemos una lista de cadenas de caracteres con 128 elementos, y
+buscamos a traves de la misma mediante busqueda binaria entonces el
+numero maximo de pasos que llevaria a una solucion seria de 7 o, lo que
+es lo mismo, log₂ 128.
+1.2 Si a la lista anterior le doblamos la cantidad de elementos ahora la
+cantidad maxima de pasos sera de log₂ 256 o 8 pasos, es decir, un paso
+de mas.
