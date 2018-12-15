@@ -1,0 +1,5 @@
+2.1 Debido a que las operaciones de insercion tienen un tiempo O(1) en
+una lista enlazada, y O(n) en un array, lo mejor es elegir y el ejercicio
+establece que seran pocas las operaciones de lectura y muchas las de
+insercion lo mejor en este caso es escoger una lista enlazada como
+estructura de datos.
