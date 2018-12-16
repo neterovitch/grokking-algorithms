@@ -1,0 +1,58 @@
+2.2 En el problema se habla de una cola de ordenes. Las listas tienen
+un tiempo de insercion(nueva orden) y de borrado(tomar orden) de O(1).
+El tiempo de borrado es de O(1) siempre y cuando se pueda acceder 
+inmediatamente al elemento, en este caso esto es posible porque la 
+mayoria de implementaciones de lista enlazada tienen registro del primer
+y ultimo(de donde el chef toma la orden) elemento en la lista asi que
+en este caso lo mejor es utilizar una lista enlazada.
+
+2.3 El problema establece un escenario hipotetico en el que una red
+social almacena una lista de usuarios. Cada vez que un determinado 
+usuario intenta ingresar a su cuenta se realiza una busqueda a traves de
+esta lista, y se permite el ingreso si el usuario existe en la misma. Si
+el algoritmo de busqueda utilizado es una busqueda binaria, y ademas se
+sabe que la gente ingresa constantemente en una red social, si ademas la
+busqueda binaria requiere de acceso aleatorio al conjunto de elementos
+objetivo entonces ¿Que estructura de datos es mejor, un array o una 
+lista enlazada?
+r/a: teniendo en cuenta la informacion proporcionada, yo almacenaria la
+lista de usuarios en un array que permite acceso aleatorio a los 
+elementos a traves de indices, entonces seria mas adecuado para una 
+busqueda binaria. Sin embargo, en este mismo escenario, y aunque el 
+problema no lo enuncia, se sabe que tambien es necesario ingresar nuevos
+usuarios en esta lista. En ese caso ¿que es mejor, la lista enlazada o 
+un array? si tenemos en cuenta que el tiempo de insercion en una lista
+enlazada es de O(1) y en un array es de O(n). Pero, tal vez la insercion
+del elemento tiene que hacerse en una determinada posicion, lo que 
+requiere de algun algoritmo de organizacion en el que aun es mejor 
+utilizar un array y no una lista enlazada o ¿tal vez existe alguna 
+estructura de datos que compensa y balancea las ventajas de cada 
+estructura de datos?
+
+2.4 Continuando por el mismo hilo de pensamiento del problema 2.3, 
+sabemos que la gente tambien se suscribe constantemente en una red 
+social. Si se ha utilizado un array como soporte para almacenar la lista
+de usuarios ¿cuales son las desventajas al insertar nuevos elementos en
+este array? 
+r/a: ya habia intentado responder esta pregunta en el numeral anterior,
+la desventaja de insertar nuevos elementos en un array es que tal 
+operacion lleva un tiempo de O(n).
+
+2.5 Ahora sabemos, que una red social no usa ni una lista enlazada ni un
+array para almacenar su lista de usuarios. Consideremos una estructura 
+de datos hibrida: un array de listas enlazadas. Un array de 26 
+posiciones, cada una apuntando a una lista que contiene nombres de 
+usuario que inician con una determinada letra del alfabeto. Ahora 
+ingresar un nuevo usuario en la lista no requiere de un tiempo O(n) pero
+se ha comprometido el tiempo de busqueda, ya que los nombres de usuario
+se encuentran almacenados en listas.
+Si se compara esta estructura de datos hibrida con un array, se ha 
+mejorado en el tiempo de insercion, pero empeorado en el tiempo de 
+busqueda. Si se compara la nueva estructura de datos con una lista, se 
+ha mejorado el tiempo de busqueda y se ha mantenido el tiempo de 
+insercion. Pero si se observa el contexto esta nueva estructura de datos
+proporciona ventajas significativas cuando se trata de inserciones y de
+lecturas, al fin y al cabo, si se implementaba individualmente en una 
+lista enlazada, o en un array, en ambos casos existian desventajas.
+
+
